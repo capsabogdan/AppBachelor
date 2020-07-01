@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardsActivity">
+
+    <EditText
+        android:id="@+id/ed_card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Numar Card"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ed_card_name"
+        app:layout_constraintStart_toStartOf="@+id/ed_card_name"
+        app:layout_constraintTop_toBottomOf="@+id/ed_card_name" />
+
+    <EditText
+        android:id="@+id/ed_cvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ed_card_number"
+        app:layout_constraintStart_toStartOf="@+id/ed_card_number"
+        app:layout_constraintTop_toBottomOf="@+id/ed_card_number" />
+
+    <EditText
+        android:id="@+id/ed_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Numele de pe card"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_cards" />
+
+    <EditText
+        android:id="@+id/ed_card_expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/ed_cvv"
+        app:layout_constraintStart_toStartOf="@+id/ed_cvv"
+        app:layout_constraintTop_toBottomOf="@+id/ed_cvv" />
+
+    <Spinner
+        android:id="@+id/spinner_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ed_card_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/txt_Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Exp."
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_card_expiry"
+        app:layout_constraintEnd_toStartOf="@+id/ed_card_expiry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ed_card_expiry" />
+</android.support.constraint.ConstraintLayout>

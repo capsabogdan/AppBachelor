@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "701775820906",
+    "firebase_url": "https://petitepay-login.firebaseio.com",
+    "project_id": "petitepay-login",
+    "storage_bucket": "petitepay-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701775820906:android:89ca96b47ae9a542317213",
+        "android_client_info": {
+          "package_name": "com.licenta.petitepay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701775820906-108rmjsm4ndl823cqba8fsc00gpjncmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9yTDoFXuOD2GFmFhm8HtqSne_mEj1o9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701775820906-108rmjsm4ndl823cqba8fsc00gpjncmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
